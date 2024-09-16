@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#LogoName {
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navIcon {
+    height: 80%;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+    height: calc(100dvh - 160px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    font-family: var(--Hammer), sans-serif;
+    font-size: 3em;
+    color: #5271ff;
+    text-align: center;
+    min-width: 300px;
+    width: 500px;
+}
+
+#MainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 10%;
+    padding-top: 50px;
+}
+
+#Brand {
+    width: 10%;
+}
+
+#InstructionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    height: 50%;
+    padding-top: 50px;
+}
+
+.Card {
+    background-color: #ffffff;
+    opacity: 70%;
+    min-width: 300px;
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+h2 {
+    color: #5271ff;
+}
+
+#DownloadContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+label {
+    background-color: #5271ff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 2em;
+    color: #ffffff;
+    font-family: var(--Hammer);
+}
+
+#ImportantContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    color: #5271ff;
+    font-size: 1.5em;
+}
+
+#Download {
+    cursor: pointer;
+}
+
+span {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+    .navIcon {
+        height: 50%;
+    }
+
+    #Brand {
+        width: 50%;
+    }
+
+    #MobileInverter {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .Card {
+        margin-bottom: 20px;
+        height: 100%;
+    }
 }
