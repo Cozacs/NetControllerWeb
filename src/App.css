@@ -23,7 +23,7 @@ nav {
 }
 
 main {
-    height: calc(100dvh - 160px);
+    height: calc(100dvh - 120px);
 }
 
 h1 {
@@ -115,10 +115,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 40px;
     background-color: black;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 500px) {
